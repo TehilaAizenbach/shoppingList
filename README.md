@@ -45,32 +45,37 @@ src/
 
 ---
 
-## 🧪 כיצד מריצים את הפרויקט
 
-1. Clone the project  
+---
+
+## 🧪 כיצד להפעיל את הפרויקט / How to Run the Project
+
+### 1. שכפול הפרויקט / Clone the project
+
 ```bash
-git clone ...
-cd shopping-list-serverהתקיני תלויות:
-
-bash
-Copy
-Edit
+git clone <repository-url>
+cd shopping-list-server
+2. התקנת תלויות / Install dependencies
 npm install
-```
-צרי קובץ .env עם הגדרות:
-
-
-```
-env
-Copy
-Edit
+3. יצירת קובץ הגדרות סביבה / Create .env file
+בקובץ .env בתיקיית השורש, הוסיפו את ההגדרות הבאות:
+Add the following variables to the .env file in the root folder:
 DB_HOST=your-host
-DB_USERNAME=...
-הרצת שרת:
-```
-``
+DB_USERNAME=your-username
+DB_PASSWORD=your-password
+# הוסיפו משתני סביבה נוספים במידת הצורך / Add additional env variables as needed
+4. הרצת השרת / Run the server
 bash
 Copy
 Edit
 npm run dev
-```
+בהצלחה! / Good luck!
+
+yaml
+Copy
+Edit
+
+---
+
+רוצה שאעזור ללטש עוד משהו?  
+אני לא רואה פה שום בעיה — כל מה שחסר זה הקישור לריפו ב-git, אבל את יודעת להוסיף את זה לבד.
