@@ -55,15 +55,13 @@ src/
 ```bash
 git clone <repository-url>
 cd shopping-list-server
-### 2.  התקנת תלויות / Install dependencies
-npm install
 
-### 3. יצירת קובץ הגדרות סביבה / Create .env file
-בקובץ .env בתיקיית השורש, הוסיפו את ההגדרות הבאות:
-Add the following variables to the .env file in the root folder:
+npm install
 DB_HOST=your-host
 DB_USERNAME=your-username
 DB_PASSWORD=your-password
+# הוסיפו משתני סביבה נוספים במידת הצורך / Add additional env variables as needed
+
 # הוסיפו משתני סביבה נוספים במידת הצורך / Add additional env variables as needed
 4. הרצת השרת / Run the server
 bash
