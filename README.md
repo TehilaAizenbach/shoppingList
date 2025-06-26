@@ -57,7 +57,8 @@ src/
 
 ```bash
 git clone <repository-url>
-cd shopping-list-server```
+cd shopping-list-server
+```
 ### 2. התקנת תלויות / Install dependencies
 
 
