@@ -72,8 +72,10 @@ Add the following variables to the `.env` file in the root folder:
 
 ```env
 DB_HOST=your-host
+DB_PORT=your-port
 DB_USERNAME=your-username
 DB_PASSWORD=your-password
+DB_DATABASE=your-db-name
 ```
 ## 🚀 הפעלת הפרויקט
 
