@@ -14,4 +14,26 @@
 ---
 
 ## 📁 מבנה תיקיות
+src/
+├── categories/
+│ └── ...
+├── shopping_items/
+│ └── ...
+├── types/
+├── data-source.ts
+├── index.ts
+
+yaml
+Copy
+Edit
+
+
+---
+
+## 🧪 כיצד מריצים את הפרויקט
+
+1. Clone the project  
+```bash
+git clone ...
+cd shopping-list-server
 
