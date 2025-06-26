@@ -52,3 +52,10 @@ src/
 git clone ...
 cd shopping-list-server
 
+## תלויות / Dependencies
+
+התקן את כל התלויות בעזרת הפקודה הבאה:  
+Install all dependencies using the following command:
+
+```bash
+npm install
