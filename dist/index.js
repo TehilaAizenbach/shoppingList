@@ -18,14 +18,9 @@ async function main() {
   await data_source_1.AppDataSource.initialize();
   const app = (0, express_1.default)();
   app.use(express_1.default.json());
-  app.use(
-    cors({
-      origin: [
-        "http://localhost:3001",
-        "https://shopping-list-client-82oodoltt-tehilas-projects-7caaf2f4.vercel.app/",
-      ],
-    })
-  );
+  app.use(cors({
+  origin: "*"
+}));
   app.use("/categories", category_routes_1.default);
   app.use("/shopping-items", shoppingItem_routes_1.default);
   app.listen(3000, () => {
