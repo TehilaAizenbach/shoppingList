@@ -50,12 +50,23 @@ src/
 1. Clone the project  
 ```bash
 git clone ...
-cd shopping-list-server
+cd shopping-list-serverהתקיני תלויות:
 
-## תלויות / Dependencies
-
-התקן את כל התלויות בעזרת הפקודה הבאה:  
-Install all dependencies using the following command:
-
-```bash
+bash
+Copy
+Edit
 npm install
+צרי קובץ .env עם הגדרות:
+
+env
+Copy
+Edit
+DB_HOST=your-host
+DB_USERNAME=...
+הרצת שרת:
+
+bash
+Copy
+Edit
+npm run dev
+
