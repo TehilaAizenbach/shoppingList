@@ -14,6 +14,7 @@
 ---
 
 ## 📁 מבנה תיקיות
+```
 src/
 ├── categories/
 │   ├── category.controller.ts
@@ -33,6 +34,7 @@ src/
 │   └── ...
 ├── data-source.ts
 ├── index.ts
+```
 
 
 
