@@ -16,16 +16,24 @@
 ## 📁 מבנה תיקיות
 src/
 ├── categories/
-│ └── ...
+│   ├── category.controller.ts
+│   ├── category.entity.ts
+│   ├── category.routes.ts
+│   ├── category.service.ts
+│   └── ...
 ├── shopping_items/
-│ └── ...
+│   ├── shoppingItem.controller.ts
+│   ├── shoppingItem.entity.ts
+│   ├── shoppingItem.routes.ts
+│   ├── shoppingItem.service.ts
+│   └── ...
 ├── types/
+│   ├── category.ts
+│   ├── shopping_item.ts
+│   └── ...
 ├── data-source.ts
 ├── index.ts
 
-yaml
-Copy
-Edit
 
 
 ---
