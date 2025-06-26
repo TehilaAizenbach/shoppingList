@@ -80,3 +80,8 @@ DB_PASSWORD=your-password
 ```bash
 npm run dev
 ```
+### 5. הפעלת הפרויקט
+
+השרת רץ ועכשיו אפשר להתחיל להשתמש ב-API.
+
+בהצלחה!
