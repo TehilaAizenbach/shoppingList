@@ -74,4 +74,9 @@ Add the following variables to the `.env` file in the root folder:
 DB_HOST=your-host
 DB_USERNAME=your-username
 DB_PASSWORD=your-password
+```
+### 4. הרצת השרת / Run the server
 
+```bash
+npm run dev
+```
