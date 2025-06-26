@@ -60,6 +60,7 @@ git clone <repository-url>
 cd shopping-list-server```
 ### 2. התקנת תלויות / Install dependencies
 
+
 ```bash
 npm install
 ```
