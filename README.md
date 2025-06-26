@@ -75,13 +75,26 @@ DB_HOST=your-host
 DB_USERNAME=your-username
 DB_PASSWORD=your-password
 ```
-### 4. הרצת השרת / Run the server
+## 🚀 הפעלת הפרויקט
+
+### פיתוח (Development)
+
+להרצת השרת ישירות עם `tsx` (ללא בנייה):
 
 ```bash
 npm run dev
 ```
-### 5. הפעלת הפרויקט
+## 📦 בנייה והרצה / Build and Run 
 
-השרת רץ ועכשיו אפשר להתחיל להשתמש ב-API.
+### 1. בניית הקוד (Compile TypeScript to JavaScript)
 
-בהצלחה!
+הפקודה מקמפלת את קבצי TypeScript לתוך תקיית `dist`:
+
+```bash
+npm run build
+```
+### 2. בניית הקוד הרצת השרת מהקוד המקמפל
+לאחר הבנייה, הפעל את השרת מקבצי JavaScript שבתיקיית dist:
+```bash
+npm start
+```
