@@ -1,3 +1,4 @@
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7,28 +8,30 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from "typeorm";
-import { Category } from "../categories/category.entity";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ShoppingItem = void 0;
+const typeorm_1 = require("typeorm");
+const category_entity_1 = require("../categories/category.entity");
 let ShoppingItem = class ShoppingItem {
 };
+exports.ShoppingItem = ShoppingItem;
 __decorate([
-    PrimaryGeneratedColumn(),
+    (0, typeorm_1.PrimaryGeneratedColumn)(),
     __metadata("design:type", Number)
 ], ShoppingItem.prototype, "id", void 0);
 __decorate([
-    Column({ type: "nvarchar", length: 255 }),
+    (0, typeorm_1.Column)({ type: "nvarchar", length: 255 }),
     __metadata("design:type", String)
 ], ShoppingItem.prototype, "name", void 0);
 __decorate([
-    Column({ type: "int" }),
+    (0, typeorm_1.Column)({ type: "int" }),
     __metadata("design:type", Number)
 ], ShoppingItem.prototype, "quantity", void 0);
 __decorate([
-    ManyToOne(() => Category, { nullable: false, onDelete: "CASCADE" }),
-    JoinColumn({ name: "category" }),
-    __metadata("design:type", Category)
+    (0, typeorm_1.ManyToOne)(() => category_entity_1.Category, { nullable: false, onDelete: "CASCADE" }),
+    (0, typeorm_1.JoinColumn)({ name: "category" }),
+    __metadata("design:type", category_entity_1.Category)
 ], ShoppingItem.prototype, "category", void 0);
-ShoppingItem = __decorate([
-    Entity("shopping_items")
+exports.ShoppingItem = ShoppingItem = __decorate([
+    (0, typeorm_1.Entity)("shopping_items")
 ], ShoppingItem);
-export { ShoppingItem };

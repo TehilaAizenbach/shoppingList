@@ -1,3 +1,4 @@
+"use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -7,11 +8,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { IsNotEmpty, IsString } from "class-validator";
-export class CategoryDTO {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CategoryDTO = void 0;
+const class_validator_1 = require("class-validator");
+class CategoryDTO {
 }
+exports.CategoryDTO = CategoryDTO;
 __decorate([
-    IsNotEmpty({ message: "Name is required" }),
-    IsString({ message: "Name must be a string" }),
+    (0, class_validator_1.IsNotEmpty)({ message: "Name is required" }),
+    (0, class_validator_1.IsString)({ message: "Name must be a string" }),
     __metadata("design:type", String)
 ], CategoryDTO.prototype, "name", void 0);

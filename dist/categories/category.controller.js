@@ -1,8 +1,11 @@
-import { CategoryService } from "./category.service";
-export class CategoryController {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CategoryController = void 0;
+const category_service_1 = require("./category.service");
+class CategoryController {
     static async getCategories(req, res) {
         try {
-            const categories = await CategoryService.getAllCategories();
+            const categories = await category_service_1.CategoryService.getAllCategories();
             res.json(categories);
         }
         catch (error) {
@@ -12,7 +15,7 @@ export class CategoryController {
     static async createCategory(req, res) {
         try {
             const { name } = req.body;
-            const category = await CategoryService.createCategory(name);
+            const category = await category_service_1.CategoryService.createCategory(name);
             res.status(201).json(category);
         }
         catch (error) {
@@ -20,3 +23,4 @@ export class CategoryController {
         }
     }
 }
+exports.CategoryController = CategoryController;

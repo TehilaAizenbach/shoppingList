@@ -1,14 +1,18 @@
-import { CategoryRepository } from "./category.repository";
-export class CategoryService {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CategoryService = void 0;
+const category_repository_1 = require("./category.repository");
+class CategoryService {
     static async getAllCategories() {
-        return CategoryRepository.find();
+        return category_repository_1.CategoryRepository.find();
     }
     static async findCategoryById(id) {
-        return CategoryRepository.findOneBy({ id });
+        return category_repository_1.CategoryRepository.findOneBy({ id });
     }
     static async createCategory(data) {
         const { name } = data;
-        const category = CategoryRepository.create({ name });
-        return CategoryRepository.save(category);
+        const category = category_repository_1.CategoryRepository.create({ name });
+        return category_repository_1.CategoryRepository.save(category);
     }
 }
+exports.CategoryService = CategoryService;
