@@ -22,7 +22,7 @@ async function main() {
     cors({
       origin: [
         "http://localhost:3001",
-        "https://shopping-list-client-opal.vercel.app",
+        "https://shopping-list-client-82oodoltt-tehilas-projects-7caaf2f4.vercel.app/",
       ],
     })
   );
