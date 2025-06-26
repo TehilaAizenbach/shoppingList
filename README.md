@@ -55,7 +55,7 @@ src/
 ```bash
 git clone <repository-url>
 cd shopping-list-server
-2. התקנת תלויות / Install dependencies
+###2. התקנת תלויות / Install dependencies
 npm install
 3. יצירת קובץ הגדרות סביבה / Create .env file
 בקובץ .env בתיקיית השורש, הוסיפו את ההגדרות הבאות:
