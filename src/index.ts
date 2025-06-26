@@ -9,13 +9,21 @@ async function main() {
   const app = express();
   app.use(express.json());
 
-  app.use(
-    cors({
-      origin: "http://localhost:3001",
-      credentials: true,
-    })
-  );
+const allowedOrigins = [
+  "http://localhost:3001",
+  "https://shopping-list-client-opal.vercel.app",
+  "https://shopping-list-client-82oodoltt-tehilas-projects-7caaf2f4.vercel.app"
+];
 
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  }
+}));
   app.use("/categories", categoryRoutes);
   app.use("/shopping-items", shoppingItemRoutes);
 
