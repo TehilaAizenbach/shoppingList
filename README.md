@@ -74,6 +74,4 @@ Add the following variables to the `.env` file in the root folder:
 DB_HOST=your-host
 DB_USERNAME=your-username
 DB_PASSWORD=your-password
-# הוסיפו משתני סביבה נוספים במידת הצורך / Add additional env variables as needed
-
 
