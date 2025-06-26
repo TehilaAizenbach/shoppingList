@@ -21,20 +21,25 @@ src/
 │   ├── category.entity.ts
 │   ├── category.routes.ts
 │   ├── category.service.ts
-│   └── ...
+│   ├── category.repository.ts
 ├── shopping_items/
 │   ├── shoppingItem.controller.ts
 │   ├── shoppingItem.entity.ts
 │   ├── shoppingItem.routes.ts
 │   ├── shoppingItem.service.ts
-│   └── ...
+│   ├── shoppingItem.repository.ts
+├── middleware/
+│   ├── validate.dto.ts
+├── utils/
+│   ├── asyncHandler.ts
 ├── types/
 │   ├── category.ts
 │   ├── shopping_item.ts
-│   └── ...
 ├── data-source.ts
 ├── index.ts
 ```
+
+
 
 
 
