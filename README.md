@@ -56,17 +56,21 @@ bash
 Copy
 Edit
 npm install
+```
 צרי קובץ .env עם הגדרות:
 
+
+```
 env
 Copy
 Edit
 DB_HOST=your-host
 DB_USERNAME=...
 הרצת שרת:
-
+```
+``
 bash
 Copy
 Edit
 npm run dev
-
+```
